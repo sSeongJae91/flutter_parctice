@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/gesture.dart';
 import 'package:project/helloworld.dart';
 import 'package:project/rowColumn.dart';
 import 'package:project/stackTest.dart';
@@ -54,7 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
           title: const Text("Test Title"),
         ),
         body: Center(
-          child: Row(
+          child: Wrap(
+            direction: Axis.horizontal,
             children: [
               ElevatedButton(
                 child: const Text('Hello World'),
@@ -83,6 +85,13 @@ class _MyHomePageState extends State<MyHomePage> {
                           builder: (context) => const StackTest()));
                 },
               ),
+              ElevatedButton(
+                child: const Text('Gesture Detect'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Gesture()));
+                },
+              )
             ],
           ),
         ));
