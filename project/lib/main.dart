@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/gesture.dart';
+import 'package:project/gridViewSample.dart';
+import 'package:project/grieViewBuilderSample.dart';
 import 'package:project/helloworld.dart';
 import 'package:project/list.dart';
 import 'package:project/listJson.dart';
@@ -102,10 +104,24 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ElevatedButton(
-                child: const Text('ListViewJson'),
+                child: const Text('ListViewBuilder'),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const ListJson()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('GridView'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const GridViewSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('GridViewBuilder'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const GridViewBuilderSample()));
                 },
               )
             ],
