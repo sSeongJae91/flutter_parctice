@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/AlignSample.dart';
 import 'package:project/gesture.dart';
 import 'package:project/gridViewSample.dart';
 import 'package:project/grieViewBuilderSample.dart';
@@ -130,6 +131,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Scroll()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('align'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const AlignSample()));
                 },
               )
             ],
