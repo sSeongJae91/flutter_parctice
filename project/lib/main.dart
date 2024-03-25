@@ -6,6 +6,7 @@ import 'package:project/helloworld.dart';
 import 'package:project/list.dart';
 import 'package:project/listJson.dart';
 import 'package:project/rowColumn.dart';
+import 'package:project/scroll.dart';
 import 'package:project/stackTest.dart';
 
 void main() {
@@ -122,6 +123,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const GridViewBuilderSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('scroll'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Scroll()));
                 },
               )
             ],
