@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:project/AlignSample.dart';
+import 'package:project/alignSample.dart';
 import 'package:project/FlexibleSample.dart';
 import 'package:project/alertSample.dart';
+import 'package:project/buttonSample.dart';
 import 'package:project/gesture.dart';
 import 'package:project/gradientSample.dart';
 import 'package:project/gridViewSample.dart';
@@ -131,45 +132,52 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ElevatedButton(
-                child: const Text('scroll'),
+                child: const Text('Scroll'),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const Scroll()));
                 },
               ),
               ElevatedButton(
-                child: const Text('align'),
+                child: const Text('Align'),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const AlignSample()));
                 },
               ),
               ElevatedButton(
-                child: const Text('alert'),
+                child: const Text('Alert'),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const AlertSample()));
                 },
               ),
               ElevatedButton(
-                child: const Text('image'),
+                child: const Text('Image'),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const ImageSample()));
                 },
               ),
               ElevatedButton(
-                child: const Text('flex,expand'),
+                child: const Text('Flex,Expand'),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const FlexibleSample()));
                 },
               ),
               ElevatedButton(
-                child: const Text('gradient'),
+                child: const Text('Gradient'),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const GradiendSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('Button'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const ButtonSample()));
                 },
               )
             ],
