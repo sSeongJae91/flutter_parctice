@@ -9,7 +9,7 @@ class Sample extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Test Title"),
       ),
-      body: const Center(child: Text("Hello World")),
+      body: Container(),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pop(context),
         child: const Icon(Icons.arrow_back),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/AlignSample.dart';
+import 'package:project/FlexibleSample.dart';
 import 'package:project/alertSample.dart';
 import 'package:project/gesture.dart';
 import 'package:project/gridViewSample.dart';
@@ -154,6 +155,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const ImageSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('flex,expand'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const FlexableSample()));
                 },
               )
             ],
