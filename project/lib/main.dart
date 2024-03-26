@@ -3,6 +3,7 @@ import 'package:project/AlignSample.dart';
 import 'package:project/FlexibleSample.dart';
 import 'package:project/alertSample.dart';
 import 'package:project/gesture.dart';
+import 'package:project/gradientSample.dart';
 import 'package:project/gridViewSample.dart';
 import 'package:project/grieViewBuilderSample.dart';
 import 'package:project/helloworld.dart';
@@ -161,7 +162,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: const Text('flex,expand'),
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const FlexableSample()));
+                      MaterialPageRoute(builder: (context) => const FlexibleSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('gradient'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const GradiendSample()));
                 },
               )
             ],
