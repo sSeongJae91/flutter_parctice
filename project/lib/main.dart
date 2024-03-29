@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:project/alignSample.dart';
 import 'package:project/FlexibleSample.dart';
 import 'package:project/alertSample.dart';
+import 'package:project/bottomNavSample.dart';
 import 'package:project/buttonSample.dart';
 import 'package:project/gesture.dart';
 import 'package:project/gradientSample.dart';
@@ -210,6 +211,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const SharedPreferenceSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('BottomTabs'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const BottomNavSample()));
                 },
               )
             ],
