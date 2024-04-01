@@ -19,6 +19,8 @@ import 'package:project/rowColumn.dart';
 import 'package:project/scroll.dart';
 import 'package:project/sharedPreferenceSample.dart';
 import 'package:project/stackTest.dart';
+import 'package:project/state/bloc_pattern/view/album_view.dart';
+import 'package:project/state/provider_pattern/ProviderSample.dart';
 import 'package:project/youtubeSample.dart';
 
 void main() {
@@ -226,6 +228,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const RefreshSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('Bloc'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const AlbumView()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('Provider'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const ProviderSample()));
                 },
               )
             ],
