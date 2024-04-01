@@ -14,6 +14,7 @@ import 'package:project/jsonSample.dart';
 import 'package:project/list.dart';
 import 'package:project/listJson.dart';
 import 'package:project/navigatorSample.dart';
+import 'package:project/refreshSample.dart';
 import 'package:project/rowColumn.dart';
 import 'package:project/scroll.dart';
 import 'package:project/sharedPreferenceSample.dart';
@@ -218,6 +219,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const BottomNavSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('Refresh'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const RefreshSample()));
                 },
               )
             ],
