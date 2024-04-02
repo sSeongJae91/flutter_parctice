@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:project/alignSample.dart';
 import 'package:project/FlexibleSample.dart';
 import 'package:project/alertSample.dart';
@@ -23,12 +24,13 @@ import 'package:project/state/bloc_pattern/view/album_view.dart';
 import 'package:project/state/get_id_pattern/getItSample.dart';
 import 'package:project/state/get_id_pattern/locator/locator.dart';
 import 'package:project/state/provider_pattern/ProviderSample.dart';
+import 'package:project/state/riverpod_pattern/riverpod_sample.dart';
 import 'package:project/youtubeSample.dart';
 
 void main() {
   //Get it 예제
   initLocator();
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -253,6 +255,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const GetItMyApp()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('RiverPod'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const RiverPodStlSample()));
                 },
               )
             ],
