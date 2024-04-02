@@ -20,10 +20,14 @@ import 'package:project/scroll.dart';
 import 'package:project/sharedPreferenceSample.dart';
 import 'package:project/stackTest.dart';
 import 'package:project/state/bloc_pattern/view/album_view.dart';
+import 'package:project/state/get_id_pattern/getItSample.dart';
+import 'package:project/state/get_id_pattern/locator/locator.dart';
 import 'package:project/state/provider_pattern/ProviderSample.dart';
 import 'package:project/youtubeSample.dart';
 
 void main() {
+  //Get it 예제
+  initLocator();
   runApp(const MyApp());
 }
 
@@ -242,6 +246,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const ProviderSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('GetIt'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const GetItMyApp()));
                 },
               )
             ],
