@@ -55,6 +55,11 @@ dependencies:
   # notification
   flutter_local_notifications:
 
+  # web view
+  webview_flutter:
+  webview_flutter_android:
+  webview_flutter_wkwebview:
+
   # riverpod
   flutter_riverpod:
   # The following adds the Cupertino Icons font to your application.

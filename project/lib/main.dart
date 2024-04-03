@@ -28,6 +28,7 @@ import 'package:project/state/get_x_pattern/get_x_sample.dart';
 import 'package:project/state/get_x_pattern/reactive/get_x_reactive_sample.dart';
 import 'package:project/state/provider_pattern/ProviderSample.dart';
 import 'package:project/state/riverpod_pattern/riverpod_sample.dart';
+import 'package:project/web_view_sample.dart';
 import 'package:project/youtubeSample.dart';
 
 void main() {
@@ -286,6 +287,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const NotificationSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('WebView'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const WebViewSample()));
                 },
               )
             ],
