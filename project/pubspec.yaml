@@ -52,6 +52,9 @@ dependencies:
   # get x
   get:
 
+  # notification
+  flutter_local_notifications:
+
   # riverpod
   flutter_riverpod:
   # The following adds the Cupertino Icons font to your application.
