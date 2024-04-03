@@ -24,6 +24,7 @@ import 'package:project/state/bloc_pattern/view/album_view.dart';
 import 'package:project/state/get_id_pattern/getItSample.dart';
 import 'package:project/state/get_id_pattern/locator/locator.dart';
 import 'package:project/state/get_x_pattern/get_x_sample.dart';
+import 'package:project/state/get_x_pattern/reactive/get_x_reactive_sample.dart';
 import 'package:project/state/provider_pattern/ProviderSample.dart';
 import 'package:project/state/riverpod_pattern/riverpod_sample.dart';
 import 'package:project/youtubeSample.dart';
@@ -270,6 +271,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const GetXSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('GetXReactive'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => GetXReactiveSample()));
                 },
               )
             ],
