@@ -49,6 +49,9 @@ dependencies:
   # get id
   get_it:
 
+  # get x
+  get:
+
   # riverpod
   flutter_riverpod:
   # The following adds the Cupertino Icons font to your application.
