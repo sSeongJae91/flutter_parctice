@@ -18,6 +18,7 @@ import 'package:project/listJson.dart';
 import 'package:project/mvvm_design_pattern/mvvm_sample.dart';
 import 'package:project/navigatorSample.dart';
 import 'package:project/notification/notification_sample.dart';
+import 'package:project/pagination_sample.dart';
 import 'package:project/refreshSample.dart';
 import 'package:project/rowColumn.dart';
 import 'package:project/scroll.dart';
@@ -310,6 +311,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const MVVMSalple()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('Pagination'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const PaginationSample()));
                 },
               )
             ],
