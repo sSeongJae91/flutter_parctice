@@ -5,6 +5,7 @@ import 'package:project/FlexibleSample.dart';
 import 'package:project/alertSample.dart';
 import 'package:project/bottomNavSample.dart';
 import 'package:project/buttonSample.dart';
+import 'package:project/carousel_slider_sample.dart';
 import 'package:project/form/form_example.dart';
 import 'package:project/gesture.dart';
 import 'package:project/gradientSample.dart';
@@ -318,6 +319,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const PaginationSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('Slider'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const CarouselSliderSample()));
                 },
               )
             ],
