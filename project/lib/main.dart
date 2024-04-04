@@ -5,6 +5,7 @@ import 'package:project/FlexibleSample.dart';
 import 'package:project/alertSample.dart';
 import 'package:project/bottomNavSample.dart';
 import 'package:project/buttonSample.dart';
+import 'package:project/form/form_example.dart';
 import 'package:project/gesture.dart';
 import 'package:project/gradientSample.dart';
 import 'package:project/gridViewSample.dart';
@@ -294,6 +295,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const WebViewSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('Form'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const FormExample()));
                 },
               )
             ],
