@@ -20,6 +20,7 @@ import 'package:project/mvvm_design_pattern/mvvm_sample.dart';
 import 'package:project/navigatorSample.dart';
 import 'package:project/notification/notification_sample.dart';
 import 'package:project/pagination_sample.dart';
+import 'package:project/photo_view/photo_view_sample.dart';
 import 'package:project/refreshSample.dart';
 import 'package:project/rowColumn.dart';
 import 'package:project/scroll.dart';
@@ -327,7 +328,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const CarouselSliderSample()));
                 },
-              )
+              ),
+              ElevatedButton(
+                child: const Text('PhotoView'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const PhotoViewSample()));
+                },
+              ),
             ],
           ),
         ));
