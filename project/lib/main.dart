@@ -13,6 +13,7 @@ import 'package:project/gridViewSample.dart';
 import 'package:project/grieViewBuilderSample.dart';
 import 'package:project/helloworld.dart';
 import 'package:project/imageSample.dart';
+import 'package:project/inapp_web_view_sample.dart';
 import 'package:project/jsonSample.dart';
 import 'package:project/list.dart';
 import 'package:project/listJson.dart';
@@ -334,6 +335,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const PhotoViewSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('InappWebView'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const InappWebViewSample()));
                 },
               ),
             ],
