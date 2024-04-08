@@ -17,6 +17,7 @@ import 'package:project/inapp_web_view_sample.dart';
 import 'package:project/jsonSample.dart';
 import 'package:project/list.dart';
 import 'package:project/listJson.dart';
+import 'package:project/matarial_sample.dart';
 import 'package:project/mvvm_design_pattern/mvvm_sample.dart';
 import 'package:project/navigatorSample.dart';
 import 'package:project/notification/notification_sample.dart';
@@ -342,6 +343,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const InappWebViewSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('Material3'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const MaterialSample()));
                 },
               ),
             ],
