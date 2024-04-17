@@ -26,6 +26,7 @@ import 'package:project/photo_view/photo_view_sample.dart';
 import 'package:project/refreshSample.dart';
 import 'package:project/rowColumn.dart';
 import 'package:project/scroll.dart';
+import 'package:project/secure_keyboard_sample.dart';
 import 'package:project/sharedPreferenceSample.dart';
 import 'package:project/stackTest.dart';
 import 'package:project/state/bloc_pattern/view/album_view.dart';
@@ -350,6 +351,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const MaterialSample()));
+                },
+              ),
+              ElevatedButton(
+                child: const Text('SecurityKeyboard'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const SecureKeyboardSample()));
                 },
               ),
             ],
